@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            text-align: center;
+        }
+
+        input[type="number"],
+        select,
+        #result {
+            margin: 10px;
+            padding: 5px;
+            width: 100px;
+            font-size: 16px;
+        }
+
+        #calculate-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #calculate-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="number" id="operand1" placeholder="Operand 1">
+        <select id="operator">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input type="number" id="operand2" placeholder="Operand 2">
+        <label for="result">=</label>
+        <input type="text" id="result" readonly>
+        <button id="calculate-btn" onclick="calculate()">Calculate</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

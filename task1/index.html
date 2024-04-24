@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Character at Position</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Remove Character at Position</h2>
+        <input type="text" id="inputString" placeholder="Enter a string">
+        <br>
+        <input type="number" id="position" placeholder="Enter position">
+        <br>
+        <button onclick="removeCharacter()">Remove Character</button>
+        <br>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy to Clipboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        textarea {
+            margin: 5px;
+            padding: 5px;
+            font-size: 16px;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Copy to Clipboard</h2>
+        <textarea id="copyText" placeholder="Enter text to copy"></textarea>
+        <br>
+        <button onclick="copyToClipboard()">Copy Text</button>
+        <br>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js" ></script>
+</body>
+</html>
